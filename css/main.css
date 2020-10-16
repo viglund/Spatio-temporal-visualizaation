@@ -1,0 +1,312 @@
+
+
+html, body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    z-index: 0 ;
+    width: 100%;
+    height:150%;
+}
+#mouse-position{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.map-zoom{
+  right: 10px;
+  top: 2em;
+}
+
+.map-zoom .map-zoom-out {
+    background: url('../img/zoom-minus-mini.png');
+    background-repeat: no-repeat !important;
+    margin-top: 190px;
+    right: 10px;
+    left:auto;
+  }
+.map-zoom .map-zoom-in {
+    background: url('../img/zoom-plus-mini.png');
+    background-repeat: no-repeat !important;
+    right: 10px;
+    left:auto;
+    top: 10px;
+  }
+.ol-zoomslider {
+  background: url('../img/zoombar.png');
+  background-repeat: no-repeat !important;
+  background-position: center;
+  top: 50px;
+  right: 17px;
+  left:auto;
+  height:200px;
+  width: 20px
+
+}
+
+.ol-touch .map-zoom .map-zoom-out {
+  margin-top: 212px;
+  border: 3px;
+  border-color: red;
+}
+.ol-touch .map-zoomslider {
+  top: 2.75em;
+}
+
+.map-zoom-in.ol-has-tooltip:hover [role=tooltip],
+.map-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+  top: 3px;
+}
+
+.map-zoom-out.ol-has-tooltip:hover [role=tooltip],
+.map-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+  top: 232px;
+}
+.ol-zoomslider-thumb {
+  height: 75px;
+  width: 75px;
+  margin: 0;
+  filter: none;
+  background: url('../img/slider.png');
+  background-repeat: no-repeat !important;
+}
+
+
+.ol-control button{
+  background-color: transparent;
+}
+
+.ol-control button:hover{
+  background-color: transparent;
+  outline: none;
+}
+
+.ol-control button:focus{
+  background-color: transparent;
+  outline: none;
+
+}
+
+.ol-control{
+  background-color: transparent;
+}
+.ol-control:hover{
+  background-color: transparent;
+}
+
+
+.mapExtent {
+  background: url('../img/extent.png');
+  background-repeat: no-repeat !important;
+  height: 45px;
+  width: 45px;
+  top: 280px;
+  right: 5px;
+  cursor: pointer;
+  background-position: center;
+}
+.ol-touch .map-zoom-extent {
+  top: 80px;
+}
+
+.jsPanel-hdr {
+    background: #558E87;
+    border-color: #558E87;
+}
+
+.icon-polygon {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 44px;
+    background: #fff url(../img/polygon_button.png) no-repeat 0 top;
+    cursor: pointer;
+}
+
+.draw_tool_text {
+  /*background-color: red;*/
+    width:70px;
+    position: relative;
+    text-align: left;
+    top: 15px;
+}
+
+.upload_tool_text {
+    position: relative;
+}
+.upload_tool_button:hover, .draw_tool_button:hover, .btn-default:hover {
+    background-color: #FFE57F;
+}
+
+.down {
+    color: #0c4739;
+    border-color: #558E87;
+    border-width: 5px;
+}
+
+.draw_tool_button {
+    height: 70px;
+    width: 80px;
+    background: #fff;
+    margin:0 0px;
+    display: inline-block;
+    line-height: 5px;
+}
+
+.upload_tool_button {
+    height: 70px;
+    width: 140px;
+    text-align: center;
+    background: #fff;
+    margin:0 0px;
+    display:inline-block;
+    line-height: 20px;
+}
+
+
+.btn-default {
+    color: #558e87;
+    background-color: #c1cac8;
+    border-color: #ccc;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.table_bottom, .table_top {
+  /*border: 1px solid black;*/
+  width: 100%;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #46746f;
+    border-color: #355853;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #558e87;
+    border-color: #4b7e78;
+    border-radius: 5px;
+    padding: 4px 10px;
+    border-width:0px;
+}
+
+.panel, .properties{
+  padding: 20px;
+}
+#result, #resultDiv {
+  padding: 10px;
+}
+
+.list {
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+.list-item {
+  list-style-type: none;
+  background-color: white;
+  padding: 6px 3px;
+  border-bottom: 1px solid #f0f0f0 !important;;
+  border-left: medium none;
+  border-right: medium none;
+}
+
+.list-hover {
+    background: #558E87;
+    border-color: #558E87;
+}
+
+
+.btn-close {
+  border-width: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  border-width: 0px
+  /*background: url('../img/zoom-plus-mini.png');
+  background-repeat: no-repeat !important;*/
+}
+
+input[type="text"]
+{
+    background: transparent;
+    /*border: none;*/
+}
+
+#infoPanel .jsPanel-btn-close {
+  display: none;
+}
+
+h3.jsPanel-title {
+  font-weight: bold;
+}
+
+
+.selectType  {
+  display: none;
+}
+
+.fa-circle,.fa-arrows-alt-h,.fa-draw-polygon,.fa-mouse-pointer {
+  color: red;
+}
+
+.layer-switcher {
+    position: absolute;
+    top: 21em;
+    right: 0.5em;
+    text-align: left;
+}
+
+/* Style for print dialog */
+.printContainer {
+    padding-top: 10%;
+}
+.showInline {
+  display:inline-block;
+}
+.printContainer label {
+    float: left;
+    min-width: 60px;
+}
+.printContainer span {
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px
+}
+.printContainer input {
+    width: 100%;
+}
+.printContainer select {
+    width: 100%;
+}
+.printContainer form {
+    padding-bottom: 4%;
+}
+.printContainer button {
+    width: 100%;
+}
+/* End style for print dialog */
