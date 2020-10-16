@@ -1,2 +1,2 @@
-# Spatio-temporal-visualizaation
+# Spatio-temporal-visualization
 Openlayers and  spatio-temporal visualization
