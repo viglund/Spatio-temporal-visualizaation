@@ -5,9 +5,6 @@ Client to test
 
 ## Server
 
-http://kart9utv.ad.skogoglandskap.no/  
-https://kart9test.nibio.no  
-https://kart9.nibio.no  
 
 ## Testlinks  
 
